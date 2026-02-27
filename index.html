@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntra AI MVP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 40px;
+            max-width: 800px;
+            text-align: center;
+            animation: slideUp 0.6s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 3em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        
+        .description {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        
+        .feature {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .feature p {
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        
+        .btn-secondary:hover {
+            background: #f0f2ff;
+            transform: translateY(-2px);
+        }
+        
+        .tech-stack {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .tech-stack h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .techs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .tech-tag {
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Syntra AI MVP</h1>
+        <p class="subtitle">Plataforma Inteligente de Gestão de Planos e Produtos</p>
+        
+        <p class="description">
+            Syntra AI é uma solução MVP para análise inteligente de planos e produtos com integração completa de pagamentos e webhooks.
+        </p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>📊 Dashboard</h3>
+                <p>Análise em tempo real com visualização de dados</p>
+            </div>
+            <div class="feature">
+                <h3>💳 Pagamentos</h3>
+                <p>Integração com Stripe para processar transações</p>
+            </div>
+            <div class="feature">
+                <h3>🤖 IA</h3>
+                <p>Análise inteligente com salesAI</p>
+            </div>
+            <div class="feature">
+                <h3>📡 Webhooks</h3>
+                <p>Sincronização automática de eventos</p>
+            </div>
+        </div>
+        
+        <div class="tech-stack">
+            <h3>🛠️ Stack Tecnológico</h3>
+            <div class="techs">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">Stripe</span>
+                <span class="tech-tag">CORS</span>
+                <span class="tech-tag">IA</span>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <a href="https://github.com/tradingmurilo-prog/Syntra-AI" class="btn btn-primary">
+                📂 Ver no GitHub
+            </a>
+            <a href="https://github.com/tradingmurilo-prog/Syntra-AI/blob/master/README.md" class="btn btn-secondary">
+                📖 Documentação
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>Desenvolvido por TradingMurilo | Syntra AI MVP 2026</p>
+            <p>Status: Em Desenvolvimento 🔧</p>
+        </div>
+    </div>
+</body>
+</html>
